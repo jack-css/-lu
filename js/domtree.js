@@ -17,9 +17,11 @@
 		element.style.OTransform = value;
 		element.style.transform = value;
 	}
+	var height_inner = window.innerHeight
+	var width_inner = window.innerWidth
 
-	var width = 400,
-		height = 600,
+	var width = 0.28 * width_inner,
+		height = 0.82 * height_inner,
 		quantity = 250,
 		types = ['text', 'select', 'progress', 'meter', 'button', 'radio', 'checkbox'],
 		greetings = ['万事顺遂', '学业进步', '美丽动人', '心想事成', '工作顺利', '金榜题名', '桃李满天下', '得心应手', '日月皆春', '一帆风顺', '圣诞快乐'];
@@ -161,5 +163,4 @@
 		rotatingText.style.transform = `rotateY(${rotationAngle}deg)`;
 	}, 50); // 每隔0.1秒执行一次，可以根据需要调整
 	resize();
-
 })()
