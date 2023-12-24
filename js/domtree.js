@@ -22,8 +22,8 @@
 		height = 600,
 		quantity = 250,
 		types = ['text', 'select', 'progress', 'meter', 'button', 'radio', 'checkbox'],
-		greetings = ['万事顺遂', '吉祥如意', '学业进步', '事业有成', '爱情美满', '出入平安', '美丽动人', '心想事成', '工作顺利', '金榜题名', '腰缠万贯', '桃李满天下', '身体健康', '平安喜乐', '得心应手', '日月皆春', '一帆风顺', '圣诞快乐'];
-
+		greetings = ['万事顺遂', '学业进步', '美丽动人', '心想事成', '工作顺利', '金榜题名', '桃李满天下', '得心应手', '日月皆春', '一帆风顺', '圣诞快乐'];
+	var poems = ['古来青史谁不见，今见功名胜古人', '长风破浪会有时，直挂云帆济沧海。', '明年此日青云上，却笑人间举子忙。', '莫见长安行乐处， 空令岁月易蹉跎。']
 	var tree = document.querySelector('.tree'),
 		treeRotation = 0;
 
@@ -45,8 +45,23 @@
 			ry = Math.random() * 360,
 			rz = -Math.random() * 15;
 
-		var elemenWidth = 5 + ((y / height) * width / 2),
+		var elemenWidth = 30 + ((y / height) * width / 2),
 			elemenHeight = 26;
+		if (elemenWidth > 190) {
+			greeting = poems[Math.floor(Math.random() * poems.length)];
+		}
+		else if (elemenWidth < 100)
+			greeting = greetings[Math.floor(Math.random() * greetings.length)];
+		else {
+			var num, num2;
+			var num = Math.floor(Math.random() * greetings.length);
+			if (num < greetings.length - 1)
+				num2 = num + 1;
+			else
+				num2 = num - 1;
+			greeting = [greetings[num] + ',' + greetings[num2]];
+
+		}
 
 		switch (type) {
 			case 'button':
@@ -131,7 +146,20 @@
 	function resize() {
 		tree.style.top = ((window.innerHeight - height - 100) / 2) + 'px';
 	}
+	// name rotate 
+	const rotatingText = document.querySelector('.private_name');
 
+	// 初始旋转角度
+	let rotationAngle = 0;
+
+	// 设置每隔一段时间执行的函数
+	const rotateInterval = setInterval(() => {
+		// 更新旋转角度
+		rotationAngle += 5; // 每次旋转10度，可以根据需要调整
+
+		// 应用旋转效果
+		rotatingText.style.transform = `rotateY(${rotationAngle}deg)`;
+	}, 50); // 每隔0.1秒执行一次，可以根据需要调整
 	resize();
 
 })()

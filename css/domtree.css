@@ -215,6 +215,7 @@ header .share .facebook {
 }
 
 
+
 /*********************************************
  * DOM TREE
  *********************************************/
@@ -315,4 +316,24 @@ body {
 	-ms-transform-origin: 0 0;
 	-o-transform-origin: 0 0;
 	transform-origin: 0 0;
+}
+
+/*题目*/
+.title_one {
+	width: 150px;
+	margin: 0 50%;
+	text-align: center;
+	position: relative;
+	transform: translate(-50%, 0);
+}
+
+.private_name {
+	font-size: 20pt;
+	color: pink;
+	width: 200px;
+	margin: 0 43.5%;
+	/* background-color: #000; */
+	text-align: center;
+	position: absolute;
+	z-index: 999;
 }
