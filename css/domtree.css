@@ -2,10 +2,10 @@
  * RESET
  *********************************************/
 
-html {
+/* html {
 	color: #000;
 	background: #222222;
-}
+} */
 
 a {
 	cursor: pointer;
@@ -336,5 +336,70 @@ body {
 	/* background-color: #000; */
 	text-align: center;
 	position: absolute;
-	z-index: 999;
+	z-index: 1;
 }
+
+/*烟花*/
+
+#canvas-container {
+	background: #000 url(bg.jpg);
+	height: 780px;
+	left: 10%;
+	margin: -200px 0 0 -300px;
+	position: absolute;
+	top: 20%;
+	width: 400px;
+	z-index: 900;
+}
+
+#rightcv {
+	background: #000 url(bg.jpg);
+	height: 780px;
+	left: 103%;
+	margin: -200px 0 0 -300px;
+	position: absolute;
+	top: 20%;
+	width: 400px;
+	z-index: 900;
+}
+
+canvas {
+	cursor: crosshair;
+	display: block;
+	position: relative;
+	z-index: 900;
+}
+
+canvas:active {
+	cursor: crosshair;
+}
+
+#skyline {
+	background: url(skyline.png) repeat-x 50% 0;
+	bottom: 0;
+	height: 325px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 900;
+}
+
+#mountains1 {
+	background: url(mountains1.png) repeat-x 40% 0;
+	bottom: 0;
+	height: 00px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 10;
+}
+
+/* #mountains2 {
+	background: url(mountains2.png) repeat-x 30% 0;
+	bottom: 0;
+	height: 250px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 900;
+} */

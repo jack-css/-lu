@@ -24,7 +24,7 @@
 		height = 0.82 * height_inner,
 		quantity = 250,
 		types = ['text', 'select', 'progress', 'meter', 'button', 'radio', 'checkbox'],
-		greetings = ['万事顺遂', '学业进步', '美丽动人', '心想事成', '工作顺利', '金榜题名', '桃李满天下', '得心应手', '日月皆春', '一帆风顺', '圣诞快乐'];
+		greetings = ['万事顺遂', '学业进步', '美丽动人', '心想事成', '一直喜欢css', '金榜题名', '桃李满天下', '得心应手', '日月皆春', '一帆风顺', '圣诞快乐'];
 	var poems = ['古来青史谁不见，今见功名胜古人', '长风破浪会有时，直挂云帆济沧海。', '明年此日青云上，却笑人间举子忙。', '莫见长安行乐处， 空令岁月易蹉跎。']
 	var tree = document.querySelector('.tree'),
 		treeRotation = 0;
@@ -119,6 +119,7 @@
 
 		tree.appendChild(element);
 	}
+	animate();
 	// name rotion
 	// The snow
 	for (var i = 0; i < 200; i++) {
