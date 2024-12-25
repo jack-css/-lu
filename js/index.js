@@ -388,7 +388,7 @@ var Fireworks = function (id_name) {
 	while (initialLaunchCount--) {
 		setTimeout(function () {
 			self.fireworks.push(new Firework(self.cw / 2, self.ch, rand(50, self.cw - 50), rand(50, self.ch / 2) - 50));
-		}, initialLaunchCount * 200);
+		}, initialLaunchCount * 600);
 	}
 
 }

@@ -19,7 +19,6 @@
 	}
 	var height_inner = window.innerHeight
 	var width_inner = window.innerWidth
-
 	var width = 0.28 * width_inner,
 		height = 0.82 * height_inner,
 		quantity = 250,
@@ -31,6 +30,7 @@
 
 	tree.style.width = width + 'px';
 	tree.style.height = height + 'px';
+	//tree.style.c
 
 	window.addEventListener('resize', resize, false);
 
@@ -71,6 +71,9 @@
 				element.textContent = greeting;
 				element.style.width = elemenWidth + 'px';
 				element.style.height = elemenHeight + 'px';
+				//这是改变文字的颜色
+				//element.style.color = 'red';
+				element.style.backgroundColor = 'orange';
 				break;
 			case 'progress':
 				element = document.createElement('progress');
@@ -80,6 +83,7 @@
 					element.setAttribute('max', '100');
 					element.setAttribute('value', Math.round(Math.random() * 100));
 				}
+				//element.style.backgroundColor = #ffffff;
 				break;
 			case 'select':
 				element = document.createElement('select');
@@ -87,6 +91,7 @@
 				element.innerHTML = '<option>' + greetings.join('</option><option>') + '</option>';
 				element.style.width = elemenWidth + 'px';
 				element.style.height = elemenHeight + 'px';
+				element.style.backgroundColor = '#329e36';
 				break;
 			case 'meter':
 				element = document.createElement('meter');
@@ -95,6 +100,7 @@
 				element.setAttribute('value', Math.round(Math.random() * 100));
 				element.style.width = elemenWidth + 'px';
 				element.style.height = elemenHeight + 'px';
+				element.style.backgroundColor = '#1678d3';
 				break;
 			case 'radio':
 				element = document.createElement('input');
@@ -113,6 +119,8 @@
 				element.setAttribute('value', greeting);
 				element.style.width = elemenWidth + 'px';
 				element.style.height = elemenHeight + 'px';
+				element.style.backgroundColor = 'red';
+
 		}
 
 		transform(element, 'translate3d(' + x + 'px, ' + y + 'px, 0px) rotateX(' + rx + 'deg) rotateY(' + ry + 'deg) rotateZ(' + rz + 'deg)');
