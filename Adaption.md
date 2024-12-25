@@ -9,20 +9,25 @@ consits of two parts:
 
 ### adaption
 website title:
-see [here](index.html#L11)
+see [here](https://github.com/jack-css/-lu/blob/14432fd74dc75a19f00daa3f2f985f7283a48e67/index.html#L11)
 
 
 title at the top of page:
-[here](index.html#L18)
+[here](https://github.com/jack-css/-lu/blob/14432fd74dc75a19f00daa3f2f985f7283a48e67/index.html#L18)
 
 rotating title:
-[here](index.html#L28)
+[here](https://github.com/jack-css/-lu/blob/14432fd74dc75a19f00daa3f2f985f7283a48e67/index.html#L28)
 
 tree leaves background color:
 * button:
-[here](js/domtree.js#L76)
+[here](https://github.com/jack-css/-lu/blob/14432fd74dc75a19f00daa3f2f985f7283a48e67/js/domtree.js#L76)
 * select
-[here](js/domtree.js#L94)
-*other
-[here](js/domtree.js#L122)
+[here](https://github.com/jack-css/-lu/blob/14432fd74dc75a19f00daa3f2f985f7283a48e67/js/domtree.js#L94)
+* other
+[here](https://github.com/jack-css/-lu/blob/14432fd74dc75a19f00daa3f2f985f7283a48e67/js/domtree.js#L122)
 
+
+firework
+
+* emission center:
+[here](https://github.com/jack-css/-lu/blob/14432fd74dc75a19f00daa3f2f985f7283a48e67/js/index.js#L31-L32)
