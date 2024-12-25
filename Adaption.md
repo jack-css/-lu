@@ -31,3 +31,6 @@ firework
 
 * emission center:
 [here](https://github.com/jack-css/-lu/blob/14432fd74dc75a19f00daa3f2f985f7283a48e67/js/index.js#L31-L32)
+
+bleesing words:
+[here](https://github.com/jack-css/-lu/blob/14432fd74dc75a19f00daa3f2f985f7283a48e67/js/domtree.js#L26-L27)
